@@ -1,0 +1,66 @@
+:root {
+  color-scheme: light;
+  font-family: "Noto Sans TC", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f3f5f9;
+  color: #1b2330;
+}
+
+.container {
+  max-width: 840px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+.hint {
+  margin-top: 0;
+  color: #586174;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+
+input[type="file"] {
+  display: block;
+  margin-bottom: 12px;
+}
+
+button {
+  background: #2063ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#status {
+  min-height: 24px;
+}
+
+#preview {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>語音 / 影片轉字幕工具</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>語音 / 影片轉字幕工具</h1>
+      <p class="hint">支援：mp3, wav, m4a, mp4, mov</p>
+
+      <div class="card">
+        <input id="fileInput" type="file" accept=".mp3,.wav,.m4a,.mp4,.mov" />
+        <button id="startBtn">開始轉字幕</button>
+        <p id="status">請先選擇檔案</p>
+        <a id="downloadLink" class="hidden" href="#" download>下載 SRT</a>
+      </div>
+
+      <section class="card">
+        <h2>SRT 預覽</h2>
+        <textarea id="preview" rows="18" readonly placeholder="轉換完成後會顯示 SRT 內容"></textarea>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
